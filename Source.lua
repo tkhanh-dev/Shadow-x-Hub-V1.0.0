@@ -9304,7 +9304,7 @@ spawn(function()
     end
 end);
 v14:Notify({
-    Title = "Min Gaming",
-    Content = "Tải Xong",
+    Title = "Shadow Hub",
+    Content = "Đã Tải Xong Script",
     Duration = 10
 });
