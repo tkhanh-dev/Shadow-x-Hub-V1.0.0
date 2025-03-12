@@ -2782,7 +2782,7 @@ spawn(function()
     end
 end);
 local v50 = v16.Main:AddToggle("ToggleMobAura", {
-    Title = "Đấm Quái Gần",
+    Title = "Đánh Quái Ở Gần",
     Description = "",
     Default = false
 });
@@ -2828,7 +2828,7 @@ spawn(function()
     end
 end);
 local v51 = v16.Main:AddToggle("ToggleCastleRaid", {
-    Title = "Đấm Hải Tặc",
+    Title = "Đánh Hải Tặc",
     Description = "",
     Default = false
 });
@@ -2865,7 +2865,7 @@ spawn(function()
     end
 end);
 local v52 = v16.Main:AddToggle("ToggleHakiFortress", {
-    Title = "Bật Haki Màu Pháo Đài",
+    Title = "Bật Haki Màu Ở Pháo Đài",
     Description = "",
     Default = false
 });
@@ -2916,7 +2916,7 @@ spawn(function()
     end
 end);
 local v55 = v16.Main:AddToggle("ToggleCollectChest", {
-    Title = "Lụm Rương",
+    Title = "Nhặt Rương",
     Description = "",
     Default = false
 });
@@ -2963,7 +2963,7 @@ v57:OnChanged(function(v249)
     TypeMastery = v249;
 end);
 local v58 = v16.Main:AddToggle("ToggleMasteryFruit", {
-    Title = "Cày Trái",
+    Title = "Cày Thông Thạo Trái",
     Description = "",
     Default = false
 });
@@ -3074,14 +3074,14 @@ end);
 if Sea3 then
     local v484 = v16.Main:AddSection("Xương");
     local v485 = v16.Main:AddParagraph({
-        Title = "Xương Trạng Thái",
+        Title = "Số Lượng Xương",
         Content = ""
     });
     spawn(function()
         pcall(function()
             while wait() do
                 local v768 = game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones", "Check");
-                v485:SetDesc("Mày Có: " .. tostring(v768) .. " Xương");
+                v485:SetDesc("Hiện tại là: " .. tostring(v768) .. " Xương");
             end
         end);
     end);
@@ -3244,13 +3244,13 @@ if Sea3 then
                 elseif (string.len(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")) == 86) then
                     v491:SetDesc("Còn: " .. string.sub(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner"), 39, 39) .. " ");
                 else
-                    v491:SetDesc("Tư Lệnh Bánh : ✅️");
+                    v491:SetDesc("Hoàng Tử Bột : ✅️");
                 end
             end);
         end
     end);
     local v492 = v16.Main:AddToggle("ToggleCake", {
-        Title = "Cày Tư Lệnh Bánh",
+        Title = "Cày Hoàng Tử Bột",
         Description = "",
         Default = false
     });
@@ -3324,7 +3324,7 @@ if Sea3 then
         end
     end);
     local v494 = v16.Main:AddToggle("ToggleDoughKing", {
-        Title = "Đấm Vua Bột",
+        Title = "Đánh Vua Bột",
         Description = "",
         Default = false
     });
@@ -3391,7 +3391,7 @@ end);
 if Sea2 then
     local v496 = v16.Main:AddSection("Ectoplasm Farm");
     local v497 = v16.Main:AddToggle("ToggleVatChatKiDi", {
-        Title = "Auto Farm Ectoplasm",
+        Title = "Cày Vật Chất Kì Dị",
         Description = "",
         Default = false
     });
@@ -3494,7 +3494,7 @@ v61:OnChanged(function(v253)
     _G.SelectBoss = v253;
 end);
 local v62 = v16.Main:AddToggle("ToggleAutoFarmBoss", {
-    Title = "Đấm Trùm",
+    Title = "Đánh Trùm",
     Description = "",
     Default = false
 });
@@ -3631,16 +3631,16 @@ spawn(function()
     end
 end);
 if Sea3 then
-    local v498 = v16.Sea:AddSection("Đảo Cáo");
+    local v498 = v16.Sea:AddSection("Đảo Kitsune");
     local v499 = v16.Sea:AddParagraph({
-        Title = "Trạng Thái Đảo Cáo",
+        Title = "Trạng Thái Đảo Kitsune",
         Content = ""
     });
     function UpdateKitsune()
         if game:GetService("Workspace").Map:FindFirstChild("KitsuneIsland") then
-            v499:SetDesc("Đảo Cáo : ✅️");
+            v499:SetDesc("Đảo Kitsune: ✅️");
         else
-            v499:SetDesc("Đảo Cáo : ❌️");
+            v499:SetDesc("Đảo Kitsune: ❌️");
         end
     end
     spawn(function()
@@ -3651,7 +3651,7 @@ if Sea3 then
         end);
     end);
     local v500 = v16.Sea:AddToggle("ToggleEspKitsune", {
-        Title = "Định Vị Đảo Cáo",
+        Title = "Định Vị Đảo Kitsune",
         Description = "",
         Default = false
     });
@@ -3695,7 +3695,7 @@ if Sea3 then
         end
     end
     local v501 = v16.Sea:AddToggle("ToggleTPKitsune", {
-        Title = "Bay Vô Đảo Cáo",
+        Title = "Bay Đến Đảo Kitsune",
         Description = "",
         Default = false
     });
@@ -3723,7 +3723,7 @@ if Sea3 then
         end
     end);
     local v502 = v16.Sea:AddToggle("ToggleCollectAzure", {
-        Title = "Lụm Linh Hồn Xanh",
+        Title = "Tự Động Nhặt Linh Hồn Xanh",
         Description = "",
         Default = false
     });
@@ -3770,7 +3770,7 @@ if Sea3 then
     });
     v509:SetValue(v508);
     local v510 = v16.Sea:AddToggle("AutoFindPrehistoric", {
-        Title = "Tìm Đảo Dung Nham",
+        Title = "Tìm Đảo Núi Lửa",
         Description = "",
         Default = false
     });
@@ -3854,8 +3854,8 @@ if Sea3 then
             _G.AutoFindPrehistoric = false;
             if not v513 then
                 v14:Notify({
-                    Title = "Min Gaming",
-                    Content = "Đảo Dung Nham Tìm Thấy",
+                    Title = "Shadow Hub",
+                    Content = "Đã Tìm Thấy Đảo Núi Lửa",
                     Duration = 10
                 });
                 v513 = true;
@@ -3948,8 +3948,8 @@ if Sea3 then
             _G.AutoFindMirage = false;
             if not v513 then
                 v14:Notify({
-                    Title = "Min Gaming",
-                    Content = "Đảo Bí Ẩn Tìm Thấy",
+                    Title = "Shadow Hub",
+                    Content = "Đã Tìm Thấy Đảo Bí Ẩn",
                     Duration = 10
                 });
                 v513 = true;
@@ -3959,7 +3959,7 @@ if Sea3 then
     end);
     local v515 = v16.Sea:AddToggle("AutoFindFrozen", {
         Title = "Tìm Đảo Leviathan",
-        Description = "Cần 5 Người Không Idk",
+        Description = "Cần Tìm 5 Người Không Bị Idk",
         Default = false
     });
     v17.AutoFindFrozen:SetValue(false);
@@ -4042,8 +4042,8 @@ if Sea3 then
             _G.AutoFindFrozen = false;
             if not v513 then
                 v14:Notify({
-                    Title = "Min Gaming",
-                    Content = "Đảo Leviathan Tìm Thấy",
+                    Title = "Shadow Hub",
+                    Content = "Đã Tìm Thấy Leviathan",
                     Duration = 10
                 });
                 v513 = true;
@@ -4215,7 +4215,7 @@ if Sea3 then
         end
     });
     local v522 = v16.Sea:AddToggle("ToggleTerrorshark", {
-        Title = "Đấm Cá Mập",
+        Title = "Đánh Cá Mập Tận Thế",
         Description = "",
         Default = false
     });
@@ -4253,7 +4253,7 @@ if Sea3 then
         end
     end);
     local v523 = v16.Sea:AddToggle("TogglePiranha", {
-        Title = "Đấm Piranha",
+        Title = "Đánh Piranha",
         Description = "",
         Default = false
     });
