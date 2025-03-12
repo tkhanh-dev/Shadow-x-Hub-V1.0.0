@@ -85,7 +85,7 @@ local v8 = CreateObject("TextLabel", {
     Name = "UserName",
     Parent = v6,
     BackgroundTransparency = 1,
-    Text = "Youtube: Min Gaming",
+    Text = "Khanh Shado",
     Position = UDim2.new(0, 75, 0, 10),
     Size = UDim2.new(0, 200, 0, 50),
     Font = Enum.Font.GothamBold,
@@ -293,10 +293,10 @@ v5:Destroy();
 -- end);
 local v14 = loadstring(game:HttpGet("https://raw.githubusercontent.com/obfalchx/testfluent/refs/heads/main/FluentTrau"))();
 local v15 = v14:CreateWindow({
-    Title = "Min Gaming",
+    Title = "Shadow Hub",
     SubTitle = "",
     TabWidth = 160,
-    Theme = "Light",
+    Theme = "Dark",
     Acrylic = false,
     Size = UDim2.fromOffset(500, 320),
     MinimizeKey = Enum.KeyCode.End
@@ -309,16 +309,16 @@ local v16 = {
         Title = "Cày"
     }),
     Sea = v15:AddTab({
-        Title = "Sự Kiện"
+        Title = "Sự Kiện Biển"
     }),
     ITM = v15:AddTab({
-        Title = "Vật Phẩm"
+        Title = "Nhiệm Vụ/Vật Phẩm"
     }),
     Setting = v15:AddTab({
         Title = "Cài Đặt"
     }),
     Status = v15:AddTab({
-        Title = "Máy Chủ"
+        Title = "Server"
     }),
     Stats = v15:AddTab({
         Title = "Chỉ Số"
@@ -330,13 +330,13 @@ local v16 = {
         Title = "Dịch Chuyển"
     }),
     Visual = v15:AddTab({
-        Title = "Giả"
+        Title = "Visual"
     }),
     Fruit = v15:AddTab({
-        Title = "Trái"
+        Title = "Trái Ác Quỷ"
     }),
     Raid = v15:AddTab({
-        Title = "Tập Kích"
+        Title = "Raid"
     }),
     Race = v15:AddTab({
         Title = "Tộc"
