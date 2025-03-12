@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://run.mocky.io/v3/013ca7b5-fcc8-401e-8548-7a508fe9e265"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tkhanh-dev/sdh/refs/heads/main/Source.lua%20(1).txt"))()
