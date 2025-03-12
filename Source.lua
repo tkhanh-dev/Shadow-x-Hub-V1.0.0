@@ -1114,14 +1114,14 @@ end
 if Sea1 then
     AreaList = {
         "Jungle",
-        "Buggy",
+        "Village Pirates",
         "Desert",
-        "Snow",
-        "Marine",
+        "Snow Island",
+        "Marine Island",
         "Sky",
         "Prison",
         "Colosseum",
-        "Magma",
+        "Magma Island",
         "Fishman",
         "Sky Island",
         "Fountain"
@@ -1133,7 +1133,7 @@ elseif Sea2 then
         "Zombie",
         "Marine",
         "Snow Mountain",
-        "Ice fire",
+        "Punk Hazard",
         "Ship",
         "Frost",
         "Forgotten"
@@ -1141,7 +1141,7 @@ elseif Sea2 then
 elseif Sea3 then
     AreaList = {
         "Pirate Port",
-        "Amazon",
+        "Hydra Island",
         "Marine Tree",
         "Deep Forest",
         "Haunted Castle",
